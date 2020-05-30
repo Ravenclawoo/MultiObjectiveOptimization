@@ -38,7 +38,7 @@ def train_multi_task(param_file):
 
     exp_identifier = []
     for (key, val) in params.items():
-        if 'tasks' in key:
+        if 'tasks' in key or 'scales' in key:
             continue
         exp_identifier+= ['{}={}'.format(key,val)]
 
